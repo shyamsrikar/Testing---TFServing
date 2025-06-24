@@ -81,6 +81,9 @@ sudo systemctl start docker
 
 ```
 
+![Screenshot from 2025-06-24 09-34-30](https://github.com/user-attachments/assets/382a6c8a-8fb0-4a97-afde-5845988562ce)
+
+
 ### ✅ Step 4: Create Project Directory and Virtual Environment
 
 
@@ -100,6 +103,9 @@ source venv/bin/activate
 pip install tensorflow
 
 ```
+
+![Screenshot from 2025-06-24 09-37-20](https://github.com/user-attachments/assets/75b6aec7-cd66-4809-82de-864c9f0c4628)
+
 
 - Create and save the model using Python:
 
@@ -173,6 +179,9 @@ sudo docker-compose up -d
 
 ```
 
+![Screenshot from 2025-06-24 09-39-08](https://github.com/user-attachments/assets/8ee00446-536a-46de-aa43-98569615ed66)
+
+
 - Verify it’s running:
 
 ```
@@ -196,6 +205,11 @@ curl http://your-public-ip:8501/v1/models/half_plus_two
 
 ```
 
+![Screenshot from 2025-06-24 09-40-12](https://github.com/user-attachments/assets/8406858f-00cf-4fba-8ada-5726f6271eb0)
+
+
+![Screenshot from 2025-06-24 09-40-39](https://github.com/user-attachments/assets/8fd4203b-960c-412c-920b-c8898c05559f)
+
 - Test inference:
 
 ```
@@ -210,6 +224,9 @@ curl -X POST http://your-public-ip:8501/v1/models/half_plus_two:predict \
 {"predictions":[2.5, 3.0, 4.5]}
 
 ```
+
+![Screenshot from 2025-06-24 09-41-27](https://github.com/user-attachments/assets/a6e39a82-7c0b-45c2-be69-8727111bdfc5)
+
 
 
 # Monitors Implemented for Testing TFServing service:
